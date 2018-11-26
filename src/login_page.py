@@ -1,3 +1,6 @@
+from tkinter import *
+import sqlite3
+
 class login_page(Frame):
 
 	screen     = 0

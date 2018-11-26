@@ -1,3 +1,5 @@
+from tkinter import *
+import sqlite3
 class user_dashboard(Frame):
 
 	screen = 1

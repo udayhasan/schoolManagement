@@ -10,12 +10,14 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 import datetime
 import csv
+from src.login_page import *
+from src.user_dashboard import *
 
 root=Tk()
 root.title("NSL - Employee daily status update software")
 root.geometry("1200x750")
 
-header_img = PhotoImage(file='./img/nslHeader.png')
+header_img = PhotoImage(file='./img/logo.png')
 header = Button(root, relief=FLAT, image = header_img, height = 140, bg="white")
 header.pack(fill=X)
 
@@ -39,8 +41,8 @@ while True:
 	if screen==0:
 		name=window.login_name.get()
 		admin=window.admin
-	if screen==1:
-		task_id = window.task_id
+	# if screen==1:
+	# 	task_id = window.task_id
 
 	screen=window.screen
 	#print(screen)
